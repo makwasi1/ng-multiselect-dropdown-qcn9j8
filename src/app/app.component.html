@@ -1,0 +1,20 @@
+<h3>Author DaiDH</h3>
+
+<div>
+  <form>
+    <ng-multiselect-dropdown
+      [placeholder]="'custom placeholder'"
+      [settings]="dropdownSettings"
+      [data]="dropdownList"
+      [(ngModel)]="selectedItems"
+      (onSelect)="onItemSelect($event)"
+      (onSelectAll)="onSelectAll($event)"
+      [checked]="checked"
+      [ngModelOptions]="{ standalone: true }"
+      (onDeSelect)="onItemDeSelect($event)"
+      (onDeSelectAll)="onUnSelectAll()"
+    >
+      >
+    </ng-multiselect-dropdown>
+  </form>
+</div>
